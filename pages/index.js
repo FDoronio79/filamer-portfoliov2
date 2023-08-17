@@ -121,7 +121,7 @@ const Page = () => {
 
             <Section delay={.4}>
                 <Heading as="h3" variant="section-title">
-                    On the Web Test
+                    On the Web
                 </Heading>
             </Section>
         </Container>

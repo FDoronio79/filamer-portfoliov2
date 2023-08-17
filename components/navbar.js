@@ -1,5 +1,6 @@
+import { forwardRef } from 'react';
 import Logo from './logo';
-// import NextLink from 'next/link';
+import NextLink from 'next/link';
 import {
     Container,
     Box,
@@ -18,24 +19,30 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from './theme-toggle-button';
 
 
-// const LinkItem = ({ href, path, children }) => {
-//     const active = path === href
-//     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
-//     return (
-//         <NextLink href={href}>
-//             <Link
-//                 p={2}
-//                 bg={active ? 'glassTeal' : undefined}
-//                 color={active ? '#202023' : inactiveColor}
-//             >
-//                 {children}
-//             </Link>
-//         </NextLink>
-//     )
-// }
+const LinkItem = ({ href, path, target, children, ...props }) => {
+    const active = path === href
+    const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+    return (
+        <Link
+            as={NextLink}
+            href={href}
+            p={2}
+            bg={active ? 'glassTeal' : undefined}
+            color={active ? '#202023' : inactiveColor}
+            target={target}
+            {...props}
+        >
+            {children}
+        </Link>
+    )
+}
+
+const MenuLink = forwardRef((props, ref) => (
+    <Link ref={ref} as={NextLink} {...props} />
+))
 
 const Navbar = props => {
-    // const { path } = props
+    const { path } = props
 
     return (
         <Box
@@ -76,12 +83,12 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, nmd: 0 }}
                 >
-                {/* <LinkItem href="/projects" path={path}>
+                <LinkItem href="/projects" path={path}>
                     Projects
                 </LinkItem>
                 <LinkItem href="/resume" path={path}>
                     Resume
-                </LinkItem> */}
+                </LinkItem>
                 </Stack>
                 <Box flex={1} align="right">
                     <ThemeToggleButton />
@@ -94,15 +101,15 @@ const Navbar = props => {
                             aria-label="Options"
                         />
                             <MenuList>
-                                {/* <NextLink href="/" passHref>
-                                    <MenuItem as={Link}>About</MenuItem>
-                                </NextLink>
-                                <NextLink href="/projects" passHref>
-                                    <MenuItem as={Link}>Projects</MenuItem>
-                                </NextLink>
-                                <NextLink href="/resume" passHref>
-                                    <MenuItem as={Link}>Resume</MenuItem>
-                                </NextLink> */}
+                                    <MenuItem as={MenuLink} href="/">
+                                    About
+                                    </MenuItem>
+                                    <MenuItem as={Link} href="/projects">
+                                    Projects
+                                    </MenuItem>
+                                    <MenuItem as={Link} href="/resume">
+                                    Resume
+                                    </MenuItem>
                                 <MenuItem as={Link} href="https://github.com/FDoronio79" target="_blank">
                                     Github
                                 </MenuItem>

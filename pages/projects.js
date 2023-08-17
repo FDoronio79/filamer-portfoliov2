@@ -1,9 +1,11 @@
+/* eslint-disable */
 import {
     Container,
     Heading,
     SimpleGrid,
     Divider
 } from '@chakra-ui/react'
+/* eslint-disable */
 import Section from '../components/section'
 import { ProjectGridItem } from '../components/grid-item'
 

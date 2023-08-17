@@ -22,7 +22,7 @@ const Page = () => {
                 textAlign="center"
                 bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
             >
-                Hello, I&apos;m a full-stack developer based in California!
+                Hello, I&apos;m a full-stack software engineer based in California!
             </Box>
 
             <Box display={{md:'flex'}}>
@@ -30,7 +30,7 @@ const Page = () => {
                 <Heading as="h2" variant="page-title">
                     Filamer Doronio
                 </Heading>
-                <p>Full-stack Developer</p>
+                <p>Full Stack Software Engineer, Food Enjoyer, Avid hiker in spirit</p>
                 {/* <p>Front-End: JavaScript, React, Tailwind, Redux, ReactRedux, Axios</p>
                 <p>Back-End: JavaScript, Python, Express, FastAPI, Django, RestAPIs</p> */}
             </Box>

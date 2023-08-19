@@ -26,7 +26,9 @@ const Project = () => {
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
-                        <Link href='https://apex-legends1.gitlab.io/paper-stonks' target='_blank'>Paper Stonks</Link>
+                        <Link href='https://apex-legends1.gitlab.io/paper-stonks' target='_blank'>
+                        Paper Stonks <ExternalLinkIcon mx="2px" />
+                        </Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Stack</Meta>
@@ -38,7 +40,9 @@ const Project = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>Source</Meta>
-                        <Link href='https://gitlab.com/apex-legends1/paper-stonks' target='_blank'>GitLab - Paper Stonks</Link>
+                        <Link href='https://gitlab.com/apex-legends1/paper-stonks' target='_blank'>
+                        GitLab - Paper Stonks <ExternalLinkIcon mx="2px" />
+                        </Link>
                     </ListItem>
                 </List>
                 <ProjectImage src='/images/projects/paper-stonks-dashboard.png' />

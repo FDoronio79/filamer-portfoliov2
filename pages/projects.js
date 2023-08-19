@@ -9,7 +9,7 @@ import {
 import Section from '../components/section'
 import { ProjectGridItem } from '../components/grid-item'
 
-import thumbPaperStonks from '../public/images/projects/paper_stonks_home_page.png'
+import thumbPaperStonks from '../public/images/projects/paper-stonks-hp.png'
 
 const Projects = () => {
     return (

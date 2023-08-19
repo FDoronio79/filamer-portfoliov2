@@ -54,12 +54,17 @@ const Resume = () => {
                         maxHeight: '100%',
                     }}
                 /> */}
+                <Link 
+                            href="/images/pdfs/Filamer_Doronio_Resume.pdf"
+                            target="_blank"
+                        >
                 <Image
                         src="/Resume.png"
                         alt="Resume"
                         width={640} // Set the width in pixels
                         height={480} // Set the height in pixels
                     />
+                </Link>
             </Box>
         </Container>
     )

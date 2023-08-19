@@ -27,10 +27,12 @@ const Resume = () => {
                         size="sm"
                         as="a"
                         href="/images/pdfs/Filamer_Doronio_Resume.pdf"
-                        download="Filamer_Doronio_Resume.pdf"
                     >
                         <Link 
-                            href="/images/pdfs/Filamer_Doronio_Resume.pdf">
+                            href="/images/pdfs/Filamer_Doronio_Resume.pdf"
+                            download="Filamer_Doronio_Resume.pdf"
+                            target="_blank"
+                        >
                             Download Resume <DownloadIcon mx="2px" />
                         </Link>
                     </Button>

@@ -9,6 +9,7 @@ import {
     Badge
 } from '@chakra-ui/react'
 import { DownloadIcon } from '@chakra-ui/icons'
+import Image from 'next/image'
 
 
 const Resume = () => {
@@ -44,7 +45,7 @@ const Resume = () => {
                 alignItems="center"
                 height="calc(100vh - 100px)" // Adjust the value to account for header and spacing
             >
-                <img
+                {/* <img
                     src="/Resume.png"
                     alt="Resume"
                     style={{
@@ -52,7 +53,13 @@ const Resume = () => {
                         height: 'auto',
                         maxHeight: '100%',
                     }}
-                />
+                /> */}
+                <Image
+                        src="/Resume.png"
+                        alt="Resume"
+                        width={640} // Set the width in pixels
+                        height={480} // Set the height in pixels
+                    />
             </Box>
         </Container>
     )

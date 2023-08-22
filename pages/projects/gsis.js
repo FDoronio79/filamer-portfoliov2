@@ -16,7 +16,7 @@ const Project = () => {
                     Galvanize SIS <Badge>Nov. 2022 - Apr. 2023</Badge>
                 </Title>
                 <P>
-                    A student information system that helps manage Galvanize - Hack Reactor's student data.
+                    A student information system that helps manage Galvanize - Hack Reactor&apo;s student data.
                     The website provides features such as course material, course recordings, and grade tracking.
                     While working for Galvanize I implemented features that included a date parser, cohort calendar generator,
                     and various bug fixes/enhancements.

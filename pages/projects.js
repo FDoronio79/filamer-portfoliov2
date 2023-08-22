@@ -68,10 +68,10 @@ const Projects = () => {
                     <Section>
                         <ProjectGridItem
                             id="gsis"
-                            title="Galvanize SIS"
+                            title="Galvanize SIS (Student Information System)"
                             thumbnail={Gsis}
                         >
-                            A website that houses the curriculum and all information for the Hack Reactor Bootcamp.
+                            A website that houses the curriculum and all information for the Hack Reactor boot camp.
                         </ProjectGridItem>
                     </Section>
                 </SimpleGrid>

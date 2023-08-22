@@ -15,6 +15,9 @@ const Main = ({ children, router }) => {
         <Box as="main" pb={8}>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta description="Filamer's Portfolio"/>
+                <meta name="author" content="Filamer Doronio" />
+                <link rel="icon" href="/images/web-coder-icon.png" type="image/png" />
                 <title>Filamer Doronio - Homepage</title>
             </Head>
 

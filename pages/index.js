@@ -1,17 +1,21 @@
 import NextLink from 'next/link';
 import { 
+    Link,
     Container, 
     Box,
     Heading,
     Image,
     useColorModeValue,
     Button,
+    List,
+    ListItem,
 } from '@chakra-ui/react';
+import { BioSection, BioYear } from '../components/bio';
+import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons';
+import { IoLogoGithub } from 'react-icons/io5'
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import Layout from '../components/layouts/article';
-import { BioSection, BioYear } from '../components/bio';
-import { ChevronRightIcon } from '@chakra-ui/icons';
 
 const Page = () => {
     return (
@@ -49,7 +53,10 @@ const Page = () => {
                     maxWidth="100px"
                     display="inline-block"
                     borderRadius="full"
-                    src="/images/cenamidi.png"
+                    src="/images/headshot.JPG"
+                    width="100px"
+                    height="100px"
+                    objectFit="cover"
                     alt="profile picture"
                 />
             </Box>
@@ -117,7 +124,7 @@ const Page = () => {
                     I ♥
                 </Heading>
                 <Paragraph>
-                    Photography, Technology, Cars, Videogames, Film
+                    Photography, Technology, Cars, Video games, Film, Music
                 </Paragraph>
             </Section>
 
@@ -125,6 +132,30 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     On the Web
                 </Heading>
+                <List>
+                    <ListItem>
+                        <Link href="https://github.com/FDoronio79" target="_blank">
+                        <Button
+                            variant="ghost"
+                            colorScheme="teal"
+                            leftIcon={<IoLogoGithub />}
+                        >
+                            @FDoronio79
+                        </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link href="mailto:filamerdoronio@gmail.com" target="_blank">
+                            <Button
+                                variant="ghost"
+                                colorScheme="teal"
+                                leftIcon={<EmailIcon />}
+                            >
+                                FilamerDoronio@gmail.com
+                            </Button>
+                        </Link>
+                    </ListItem>
+                </List>
             </Section>
         </Container>
         </Layout>

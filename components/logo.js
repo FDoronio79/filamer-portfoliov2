@@ -18,7 +18,7 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-    const softwareDude = `/images/software_dude.gif`
+    const softwareDude = `/images/web-coder-icon.png`
     return (
         <Link href="/" passHref>
             <LogoBox>

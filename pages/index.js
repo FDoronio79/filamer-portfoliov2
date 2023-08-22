@@ -90,14 +90,14 @@ const Page = () => {
                     <BioYear>
                         1997
                     </BioYear>
-                    Born in Manila, Philippines.
+                    Born in Manila, Philippines
                 </BioSection>
                 <BioSection>
                     <BioYear>
                         2015
                     </BioYear>
                     Completed BBA in Finance from the Shidler College of Business at The University of Hawai&apos;i
-                    at Mānoa.
+                    at Mānoa
                 </BioSection>
                 <BioSection>
                     <BioYear>

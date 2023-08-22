@@ -11,6 +11,8 @@ import { ProjectGridItem } from '../components/grid-item'
 
 import thumbPaperStonks from '../public/images/projects/paper-stonks-hp.png'
 import Carventoryhp from '../public/images/projects/Carventory_hp.png'
+import Thryvcp from '../public/images/projects/thryv_cover_page.png'
+import Gsis from '../public/images/projects/gsis_home_page.png'
 import Layout from '../components/layouts/article'
 
 
@@ -52,6 +54,27 @@ const Projects = () => {
                         Professional Work / Collaborations
                     </Heading>
                 </Section>
+
+                <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                    <Section>
+                        <ProjectGridItem
+                            id="thryv"
+                            title="Thryv Marketing Center"
+                            thumbnail={Thryvcp}
+                        >
+                            An all-in-one software centered around small business to make life easier for day to day operations.
+                        </ProjectGridItem>
+                    </Section>
+                    <Section>
+                        <ProjectGridItem
+                            id="gsis"
+                            title="Galvanize SIS"
+                            thumbnail={Gsis}
+                        >
+                            A website that houses the curriculum and all information for the Hack Reactor Bootcamp.
+                        </ProjectGridItem>
+                    </Section>
+                </SimpleGrid>
 
             </Container>
         </Layout>

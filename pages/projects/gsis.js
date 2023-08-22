@@ -13,10 +13,10 @@ import Layout from '../../components/layouts/article'
 
 const Project = () => {
     return (
-        <Layout title="Carventory">
+        <Layout title="Galvanize">
             <Container>
                 <Title>
-                    Carventory <Badge>2022</Badge>
+                    Galvanize SIS <Badge>Nov. 2022 - Apr. 2023</Badge>
                 </Title>
                 <P>
                 A web application that handles interactions between a dealership and its customers. Provides inventory tracking of car models, vehicle sales/history and service appointments board/logs.

@@ -16,6 +16,7 @@ import { IoLogoGithub } from 'react-icons/io5'
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import Layout from '../components/layouts/article';
+import SpotifyRecentSongs from '../components/spotify';
 
 const Page = () => {
     return (
@@ -156,6 +157,12 @@ const Page = () => {
                         </Link>
                     </ListItem>
                 </List>
+            </Section>
+            <Section delay={.5}>
+                <Heading as="h3" variant="section-title">
+                    My Top Songs of the Month
+                </Heading>
+                <SpotifyRecentSongs />
             </Section>
         </Container>
         </Layout>

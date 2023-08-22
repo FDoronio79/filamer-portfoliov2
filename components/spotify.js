@@ -22,7 +22,7 @@ const spin = keyframes`
     to { transform: rotate(360deg); }
     `;
 
-export default function AboutMeSpotifyRecentSongs() {
+export default function SpotifyRecentSongs() {
     const { colorMode } = useColorMode();
     const [desktopQuery] = useMediaQuery("(min-width: 700px)");
     const [isMinWidth, setIsMinWidth] = useState(false);

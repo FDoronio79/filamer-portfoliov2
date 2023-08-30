@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 import { BioSection, BioYear } from '../components/bio';
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons';
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import Layout from '../components/layouts/article';
@@ -154,6 +154,17 @@ const Page = () => {
                                 FilamerDoronio@gmail.com
                             </Button>
                         </Link>
+                    </ListItem>
+                    <ListItem>
+                            <Link href="https://www.linkedin.com/in/fdoronio/" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<IoLogoLinkedin />}
+                                >
+                                    Filamer Doronio
+                                </Button>
+                            </Link>
                     </ListItem>
                 </List>
             </Section>

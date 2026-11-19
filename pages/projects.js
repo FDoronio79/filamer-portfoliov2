@@ -25,36 +25,8 @@ const Projects = () => {
                     Portfolio
                 </Heading>
                 <Heading as="h3" fontSize={20} mb={4}>
-                    Personal Projects
+                    Professional Work / Collaborations
                 </Heading>
-
-                <SimpleGrid columns={[1, 1, 2]} gap={6}>
-                    <Section>
-                        <ProjectGridItem
-                            id="paper-stonks"
-                            title="Paper Stonks"
-                            thumbnail={thumbPaperStonks}
-                        >
-                            A sweat free paper trading app for users to practice
-                            and hone their trading strategies using live market data.
-                        </ProjectGridItem>
-                    </Section>
-                    <Section>
-                        <ProjectGridItem
-                            id="carventory"
-                            title="Carventory"
-                            thumbnail={Carventoryhp}
-                        >
-                            A dealer focused application that allows for streamlined management of sales, inventory, and service appointments.
-                        </ProjectGridItem>
-                    </Section>
-                </SimpleGrid>
-                <Section delay={0.2}>
-                    <Divider my={6} />
-                    <Heading as="h3" fontSize={20} mb={4}>
-                        Professional Work / Collaborations
-                    </Heading>
-                </Section>
 
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section>
@@ -83,6 +55,34 @@ const Projects = () => {
                             thumbnail={Gsis}
                         >
                             A website that houses the curriculum and all information for the Hack Reactor boot camp.
+                        </ProjectGridItem>
+                    </Section>
+                </SimpleGrid>
+                <Section delay={0.2}>
+                    <Divider my={6} />
+                    <Heading as="h3" fontSize={20} mb={4}>
+                        Personal Projects
+                    </Heading>
+                </Section>
+
+                <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                    <Section>
+                        <ProjectGridItem
+                            id="paper-stonks"
+                            title="Paper Stonks"
+                            thumbnail={thumbPaperStonks}
+                        >
+                            A sweat free paper trading app for users to practice
+                            and hone their trading strategies using live market data.
+                        </ProjectGridItem>
+                    </Section>
+                    <Section>
+                        <ProjectGridItem
+                            id="carventory"
+                            title="Carventory"
+                            thumbnail={Carventoryhp}
+                        >
+                            A dealer focused application that allows for streamlined management of sales, inventory, and service appointments.
                         </ProjectGridItem>
                     </Section>
                 </SimpleGrid>

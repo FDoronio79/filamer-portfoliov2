@@ -9,6 +9,9 @@ import {
     Button,
     List,
     ListItem,
+    Badge,
+    Wrap,
+    WrapItem,
 } from '@chakra-ui/react';
 import { BioSection, BioYear } from '../components/bio';
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons';
@@ -28,7 +31,7 @@ const Page = () => {
                     textAlign="center"
                     bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                 >
-                    Hello, I&apos;m a full-stack software engineer based in California!
+                    Hello, I&apos;m a full-stack software engineer based in Honolulu, Hawai&apos;i!
                 </Box>
 
                 <Box display={{ md: 'flex' }}>
@@ -37,6 +40,18 @@ const Page = () => {
                             Filamer Doronio
                         </Heading>
                         <p>Full Stack Software Engineer, Food Enjoyer, Avid hiker in spirit</p>
+                        <Wrap mt={2} spacing={2}>
+                            <WrapItem>
+                                <Badge colorScheme="green" variant="subtle" fontSize="0.8em" px={2} py={1} borderRadius="md">
+                                    Open to work
+                                </Badge>
+                            </WrapItem>
+                            <WrapItem>
+                                <Badge colorScheme="teal" variant="subtle" fontSize="0.8em" px={2} py={1} borderRadius="md">
+                                    Open to relocation
+                                </Badge>
+                            </WrapItem>
+                        </Wrap>
                         {/* <p>Front-End: JavaScript, React, Tailwind, Redux, ReactRedux, Axios</p>
                 <p>Back-End: JavaScript, Python, Express, FastAPI, Django, RestAPIs</p> */}
                     </Box>
@@ -67,10 +82,13 @@ const Page = () => {
                         Intro
                     </Heading>
                     <Paragraph>
-                        Hello World! I am Filamer Doronio a full-stack developer based in San Francisco
+                        Hello World! I am Filamer Doronio a full-stack developer based in Honolulu
                         who loves crafting innovative solutions. My background includes Finance and Business Analytics,
                         and I transitioned to software engineering driven by my passion for tech.
-                        I honed my skills at HackReactor&apos;s boot camp. Currently working as a Web Developer, I&apos;m also keen on new prospects.
+                        I honed my skills at HackReactor&apos;s boot camp and spent 3.5 years as a Web Developer at Thryv, building
+                        listings, call tracking and reviews features with React, TypeScript and Node.js.
+                        I&apos;m currently building Pack Check, a catering order and QR-tracked packing platform, with The Node Forge.
+                        I&apos;m open to new full-stack roles and happy to relocate for the right opportunity.
                         Beyond coding, I&apos;m into photography, interior design, and spending time with friends.
                     </Paragraph>
                     <Box align="center" my={4}>
@@ -94,7 +112,13 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>
-                            2015
+                            2018 to 2019
+                        </BioYear>
+                        Worked at New York Life as a Financial Services Professional
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>
+                            2019
                         </BioYear>
                         Completed BBA in Finance from the Shidler College of Business at The University of Hawai&apos;i
                         at Mānoa
@@ -107,15 +131,27 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>
+                            2022
+                        </BioYear>
+                        Earned a Certificate in Advanced Software Engineering from HackReactor
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>
                             2022 to 2023
                         </BioYear>
                         Worked as a Resident for HackReactor&apos;s 19 week boot camp
                     </BioSection>
                     <BioSection>
                         <BioYear>
-                            2023 to Present
+                            2023 to 2026
                         </BioYear>
-                        Working as a Web Developer for Thryv
+                        Worked as a Web Developer for Thryv
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>
+                            2026 to Present
+                        </BioYear>
+                        Building Pack Check with The Node Forge (work in progress)
                     </BioSection>
                 </Section>
 
@@ -159,13 +195,13 @@ const Page = () => {
                             </Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="mailto:filamerdoronio@gmail.com" target="_blank">
+                            <Link href="mailto:filamerd.dev@gmail.com" target="_blank">
                                 <Button
                                     variant="ghost"
                                     colorScheme="teal"
                                     leftIcon={<EmailIcon />}
                                 >
-                                    FilamerDoronio@gmail.com
+                                    filamerd.dev@gmail.com
                                 </Button>
                             </Link>
                         </ListItem>

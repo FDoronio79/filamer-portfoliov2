@@ -28,41 +28,24 @@ const Resume = () => {
                         size="sm"
                         as="a"
                         href="/images/pdfs/Filamer_Doronio_Resume.pdf"
+                        download="Filamer_Doronio_Resume.pdf"
+                        target="_blank"
                     >
-                        <Link 
-                            href="/images/pdfs/Filamer_Doronio_Resume.pdf"
-                            download="Filamer_Doronio_Resume.pdf"
-                            target="_blank"
-                        >
-                            Download Resume <DownloadIcon mx="2px" />
-                        </Link>
+                        Download Resume <DownloadIcon mx="2px" />
                     </Button>
                 </ListItem>
             </List>
-            <Box
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                height="calc(100vh - 100px)" // Adjust the value to account for header and spacing
-            >
-                {/* <img
-                    src="/Resume.png"
-                    alt="Resume"
-                    style={{
-                        width: '100%',
-                        height: 'auto',
-                        maxHeight: '100%',
-                    }}
-                /> */}
-                <Link 
-                            href="/images/pdfs/Filamer_Doronio_Resume.pdf"
-                            target="_blank"
-                        >
-                <Image
+            <Box display="flex" justifyContent="center" mb={8}>
+                <Link
+                    href="/images/pdfs/Filamer_Doronio_Resume.pdf"
+                    target="_blank"
+                >
+                    <Image
                         src="/Resume.png"
                         alt="Resume"
-                        width={640} // Set the width in pixels
-                        height={480} // Set the height in pixels
+                        width={1313}
+                        height={1700}
+                        style={{ width: '100%', height: 'auto' }}
                     />
                 </Link>
             </Box>

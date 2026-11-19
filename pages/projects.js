@@ -13,6 +13,7 @@ import thumbPaperStonks from '../public/images/projects/paper-stonks-hp.png'
 import Carventoryhp from '../public/images/projects/Carventory_hp.png'
 import Thryvcp from '../public/images/projects/thryv_cover_page.png'
 import Gsis from '../public/images/projects/gsis_home_page.png'
+import PackCheck from '../public/images/projects/packcheck_cover.png'
 import Layout from '../components/layouts/article'
 
 
@@ -56,6 +57,16 @@ const Projects = () => {
                 </Section>
 
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                    <Section>
+                        <ProjectGridItem
+                            id="pack-check"
+                            title="Pack Check"
+                            thumbnail={PackCheck}
+                            badge="WIP"
+                        >
+                            A catering order and production platform with QR-tracked packing. Currently a work in progress.
+                        </ProjectGridItem>
+                    </Section>
                     <Section>
                         <ProjectGridItem
                             id="thryv"

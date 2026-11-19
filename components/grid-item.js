@@ -3,6 +3,7 @@ import Image from 'next/image';
 import {
     Box,
     Text,
+    Badge,
     LinkBox,
     LinkOverlay
 } from '@chakra-ui/react';
@@ -26,26 +27,29 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
     </Box>
 )
 
-export const ProjectGridItem = ({ children, id, title, thumbnail }) => (
+export const ProjectGridItem = ({ children, id, title, thumbnail, badge }) => (
     <Box w="100%" align="center">
-        <NextLink href={`/projects/${id}`}>
-            <LinkBox cursor="pointer">
-                <Image
-                    src={thumbnail}
-                    alt={title}
-                    className="grid-item-thumbnail" 
-                    placeholder='blur'
-                    />
-                <LinkOverlay href={`/projects/${id}`}>
-                    <Text mt={2} fontSize={20}>
-                        {title}
-                    </Text>
-                </LinkOverlay>
-                <Text fontsize={14}>
-                {children}
+        <LinkBox cursor="pointer">
+            <Image
+                src={thumbnail}
+                alt={title}
+                className="grid-item-thumbnail" 
+                placeholder='blur'
+                />
+            <LinkOverlay as={NextLink} href={`/projects/${id}`}>
+                <Text mt={2} fontSize={20}>
+                    {title}
+                    {badge && (
+                        <Badge ml={2} colorScheme="yellow" verticalAlign="middle">
+                            {badge}
+                        </Badge>
+                    )}
                 </Text>
-            </LinkBox>
-        </NextLink>
+            </LinkOverlay>
+            <Text fontsize={14}>
+                {children}
+            </Text>
+        </LinkBox>
     </Box>
 )
 
